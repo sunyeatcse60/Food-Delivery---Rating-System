@@ -78,11 +78,12 @@
                 >0</span
               >
             </div>
-            <button
-              class="bg-yellow-400 text-white px-4 py-1 rounded font-semibold hover:bg-[#471396]"
-            >
-              Login
-            </button>
+
+            <label for="login-modal" class="bg-yellow-400 text-white px-4 py-1 rounded font-semibold hover:bg-[#471396] cursor-pointer">
+  Login
+</label>
+
+
 
             <!-- Mobile Dropdown -->
             <div class="lg:hidden dropdown dropdown-end">
@@ -378,5 +379,124 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
+
+  
+
+<!-- Login Modal -->
+<input type="checkbox" id="login-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box fixed  max-w-md rounded-md p-6 bg-gray-100 ">
+    <label for="login-modal" class="absolute top-2 right-2 text-xl cursor-pointer text-gray-600 hover:text-red-500">
+      &times;
+    </label>
+
+    <h4 class="font-bold text-2xl mb-4">Welcome !!</h4>
+
+    <form class="space-y-4">
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Email or Username</label>
+        <input
+          type="text"
+          placeholder="Enter email or username"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <button type="submit" class="btn w-full bg-yellow-400 hover:bg-[#471396] text-white">
+        Login
+      </button>
+    </form>
+
+    <p class="text-sm text-center mt-4">
+      Don’t have an account?
+      <label for="signup-modal" class="text-yellow-500 hover:underline cursor-pointer" onclick="document.getElementById('login-modal').checked = false;">
+        Sign Up
+      </label>
+    </p>
+  </div>
+</div>
+
+
+<!-- Signup Modal -->
+<input type="checkbox" id="signup-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box fixed max-w-md rounded-md p-6 bg-white">
+    <label for="signup-modal" class="absolute top-2 right-2 text-xl cursor-pointer text-gray-600 hover:text-red-500">
+      &times;
+    </label>
+
+    <h4 class="font-bold text-2xl mb-4">Welcome !!</h4>
+
+    <form class="space-y-4">
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Username</label>
+        <input
+          type="text"
+          placeholder="Enter username"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Phone</label>
+        <input
+          type="tel"
+          placeholder="Enter your phone"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Password</label>
+        <input
+          type="password"
+          placeholder="Create a password"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-gray-700">Confirm Password</label>
+        <input
+          type="password"
+          placeholder="Confirm your password"
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+      </div>
+      <button type="submit" class="btn w-full bg-yellow-400 hover:bg-[#471396] text-white">
+        Sign Up
+      </button>
+    </form>
+
+    <p class="text-sm text-center mt-4">
+      Already have an account?
+      <label for="login-modal" class="text-yellow-500 hover:underline cursor-pointer" onclick="document.getElementById('signup-modal').checked = false;">
+        Login
+      </label>
+    </p>
+  </div>
+</div>
+
+
+
   </body>
 </html>
