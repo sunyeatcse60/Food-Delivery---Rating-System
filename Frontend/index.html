@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickDish</title>
+
+    <!-- icon -->
+    <link rel="icon" href="../Images/icon.png" type="image/x-icon" />
+
+    <!-- DaisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CDN (Updated version) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-md">
+      <nav class="max-w-screen-xl mx-auto px-6 lg:px-16">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img
+              src="../Images/logo.png"
+              alt="logo"
+              class="w-10 h-10 rounded-lg"
+            />
+            <h1 class="text-2xl font-bold text-gray-800">QuickDish</h1>
+          </div>
+
+          <!-- Large device Nav -->
+          <div class="hidden lg:flex gap-6 text-gray-700 font-medium">
+            <a href="#" class="hover:text-yellow-500">Home</a>
+            <a href="#" class="hover:text-yellow-500">Menu</a>
+            <a href="#" class="hover:text-yellow-500">Service</a>
+            <a href="#" class="hover:text-yellow-500">Reviews</a>
+            <a href="#" class="hover:text-yellow-500">About Us</a>
+          </div>
+
+          <!-- Cart + Login -->
+          <div class="flex items-center gap-4">
+            <div class="relative hidden sm:block">
+              <svg
+                class="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 6h15l-1.5 9h-13z"></path>
+                <path d="M6 6L4 2H2"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="18" cy="20" r="1"></circle>
+              </svg>
+              <span
+                class="absolute -top-2 -right-2 bg-yellow-400 text-xs px-1 rounded-full text-white"
+                >0</span
+              >
+            </div>
+            <button
+              class="bg-yellow-400 text-white px-4 py-1 rounded font-semibold hover:bg-[#471396]"
+            >
+              Login
+            </button>
+
+            <!-- Mobile Dropdown -->
+            <div class="lg:hidden dropdown dropdown-end">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost shadow rounded-full p-2"
+              >
+                <svg
+                  class="w-6 h-6 text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
+              >
+                <li><a class="font-medium text-gray-700">Home</a></li>
+                <li><a class="font-medium text-gray-700">Menu</a></li>
+                <li><a class="font-medium text-gray-700">Service</a></li>
+                <li><a class="font-medium text-gray-700">Reviews</a></li>
+                <li><a class="font-medium text-gray-700">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content with top padding -->
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="w-10/12 mx-auto rounded-lg bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-10 py-14 relative"
+      >
+        <div class="max-w-xl text-left">
+          <h2 class="text-5xl font-bold leading-snug text-gray-900 mb-6">
+            Enjoy Your<br />
+            <span
+              class="text-6xl font-extrabold text-black inline-flex items-center gap-2"
+            >
+              Delicious
+            </span>
+            <br />
+            Food
+          </h2>
+          <div
+            class="flex shadow-md rounded overflow-hidden w-full max-w-md mb-10"
+          >
+            <input
+              type="text"
+              placeholder="Type your Location"
+              class="flex-grow px-4 py-3 text-gray-700 outline-none"
+            />
+            <button class="bg-yellow-400 px-6 text-white font-semibold hover:bg-[#471396]">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:absolute right-10 bottom-0 w-full lg:w-1/2">
+          <img
+            src="../Images/hero-Photo.png"
+            alt="Delivery Woman"
+            class="w-full"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+
+    <footer
+      class="footer mt-10 sm:footer-horizontal bg-base-200 text-base-content p-10"
+    >
+      <aside>
+        <img src="../Images/logo.png" alt="logo" class="w-10 h-10 rounded-lg" />
+        <p>
+          <span class="font-bold text-xl text-yellow-">QuickDish</span>
+          <br />
+          Providing reliable tech since 1992
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Fast food delivery</a>
+        <a class="link link-hover">24/7 support</a>
+        <a class="link link-hover">Online payment</a>
+        <a class="link link-hover">Real-time order tracking</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Our food Reviews</a>
+        <a class="link link-hover">Our team</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms & Conditions</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Refund Policyy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+  </body>
+</html>
+
+<!-- Delivery Process Section -->
+<!-- <section class="bg-gray-100 py-10 px-10">
+    <div class="flex justify-center items-center gap-10 text-center">
+      <div class="text-sm">
+        <img src="bike-icon.png" alt="bike" class="w-20 mx-auto mb-2" />
+        <h4 class="text-lg font-semibold">Delivery Process</h4>
+      </div>
+
+      <div class="text-sm">
+        <img src="booking-icon.png" alt="booking" class="w-12 mx-auto mb-1" />
+        <p class="font-medium">Booking</p>
+      </div>
+      <div class="text-sm">
+        <img src="packing-icon.png" alt="packing" class="w-12 mx-auto mb-1" />
+        <p class="font-medium">Packing</p>
+      </div>
+      <div class="text-sm">
+        <img src="transport-icon.png" alt="transport" class="w-12 mx-auto mb-1" />
+        <p class="font-medium">Transportation</p>
+      </div>
+      <div class="text-sm">
+        <img src="delivery-icon.png" alt="delivery" class="w-12 mx-auto mb-1" />
+        <p class="font-medium">Delivery</p>
+      </div>
+    </div>
+  </section> -->
