@@ -390,7 +390,7 @@
 
       <!-- Delivery Process Section -->
       <section
-        class="w-10/12 mx-auto bg-gray-100 rounded-lg shadow-md mt-10 py-10 px-4"
+        class="w-10/12 mx-auto bg-gray-50 rounded-lg shadow-md mt-10 py-10 px-4"
       >
         <div
           class="flex flex-col md:flex-row justify-center items-center gap-10 text-center"
@@ -453,7 +453,7 @@
 
     <!-- Footer -->
     <footer
-      class="footer mt-10 sm:footer-horizontal bg-base-200 text-base-content p-10"
+      class="footer w-10/12 mx-auto mt-10 sm:footer-horizontal  text-base-content p-10"
     >
       <aside>
         <img src="../Images/logo.png" alt="logo" class="w-10 h-10 rounded-lg" />
@@ -504,7 +504,7 @@
               >Email or Username</label
             >
             <input
-              type="text"
+              type="text" id="user-email"
               placeholder="Enter email or username"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -513,14 +513,14 @@
           <div>
             <label class="text-sm font-semibold text-gray-700">Password</label>
             <input
-              type="password"
+              type="password" id="user-password"
               placeholder="Enter your password"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
             />
           </div>
           <button
-            type="submit"
+            type="submit" id="log-btn"
             class="btn w-full bg-yellow-400 hover:bg-[#471396] text-white"
           >
             Login
@@ -553,11 +553,11 @@
 
         <h4 class="font-bold text-2xl mb-4">Welcome !!</h4>
 
-        <form class="space-y-4">
+        <form class="space-y-4" id="myForm">
           <div>
             <label class="text-sm font-semibold text-gray-700">Username</label>
             <input
-              type="text"
+              type="text" id="username"
               placeholder="Enter username"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -566,7 +566,7 @@
           <div>
             <label class="text-sm font-semibold text-gray-700">Email</label>
             <input
-              type="email"
+              type="email" id="email"
               placeholder="Enter your email"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -575,7 +575,7 @@
           <div>
             <label class="text-sm font-semibold text-gray-700">Phone</label>
             <input
-              type="tel"
+              type="tel" id="phone"
               placeholder="Enter your phone"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -584,7 +584,7 @@
           <div>
             <label class="text-sm font-semibold text-gray-700">Password</label>
             <input
-              type="password"
+              type="password" id="password"
               placeholder="Create a password"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -595,7 +595,7 @@
               >Confirm Password</label
             >
             <input
-              type="password"
+              type="password" id="confirmPassword"
               placeholder="Confirm your password"
               class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
               required
@@ -621,5 +621,8 @@
         </p>
       </div>
     </div>
+    <!-- js file  link -->
+     <script src="./login.js"></script>
+     <script src="./signup.js"></script>
   </body>
 </html>
