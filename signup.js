@@ -30,7 +30,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,}$/;
   if (!passwordPattern.test(password)) {
     isValid = false;
-    message += "Password must contain at least:\n- one uppercase letter\n- one lowercase letter\n- one number\n- one special character\n- and be at least 6 characters long.\n";
+    message +=
+      "Password must contain at least:\n- one uppercase letter\n- one lowercase letter\n- one number\n- one special character\n- and be at least 6 characters long.\n";
   }
 
   if (password !== confirmPassword) {

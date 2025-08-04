@@ -1,57 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="w-10/12 mx-auto rounded-lg bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-10 py-14 relative" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
 
-        <div
-            class="md:w-1/2 bg-white rounded-lg shadow p-6 h-full flex flex-col justify-between"
-          >
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <section
+      class="w-10/12 mx-auto rounded-lg bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-10 py-14 gap-10 mt-10 relative"
+    >
+      <!-- Back Button -->
+      <div class="absolute top-4 left-4">
+        <a
+          href="index.html"
+          class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white font-bold py-2 px-5 rounded-md transition shadow"
+        >
+          ← Back
+        </a>
+      </div>
+
+      <!-- Feedback Form-->
+      <div class="w-full lg:w-[70%] bg-white rounded-lg shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">
+          We Value Your Feedback
+        </h3>
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 class="text-xl font-semibold text-center mb-4">
-                Feedback Form
-              </h3>
-              <form class="space-y-4">
-                <div>
-                  <label class="block text-sm font-medium mb-1">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium mb-1">Email</label>
-                  <input
-                    type="email"
-                    placeholder="you@example.com"
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium mb-1">Feedback</label>
-                  <textarea
-                    rows="4"
-                    placeholder="Your feedback..."
-                    class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  ></textarea>
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Name</label
+              >
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Email</label
+              >
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
           </div>
 
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Your Feedback</label
+            >
+            <textarea
+              rows="5"
+              placeholder="Share your thoughts with us..."
+              class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            ></textarea>
+          </div>
+
+          <!-- Star Rating-->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Rate Us</label
+            >
+            <div class="flex gap-2 text-3xl text-yellow-400" id="stars">
+              <span data-value="1" class="cursor-pointer">&#9734;</span>
+              <span data-value="2" class="cursor-pointer">&#9734;</span>
+              <span data-value="3" class="cursor-pointer">&#9734;</span>
+              <span data-value="4" class="cursor-pointer">&#9734;</span>
+              <span data-value="5" class="cursor-pointer">&#9734;</span>
+            </div>
+            <input type="hidden" name="rating" id="rating-value" value="0" />
+          </div>
+
+          <div class="text-center pt-4">
+            <button
+              type="submit"
+              class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white font-semibold py-3 px-8 rounded-md transition"
+            >
+              Submit Feedback
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Image and Message -->
+      <div class="w-full lg:w-[30%] text-center">
+        <img
+          src="./Images/rating.png"
+          alt="Feedback Illustration"
+          class="w-86 h-86 mx-auto rounded-lg object-contain mb-4"
+        />
+        <h4 class="text-2xl mt-10 font-semibold text-blue-600 mb-2">
+          Help Us Improve 💬
+        </h4>
+        <p class="text-gray-600">
+          Your opinion matters. Share your experience and help us grow.
+        </p>
+      </div>
     </section>
-</body>
+
+    <!-- JS for rating -->
+    <script src="./rating.js"></script>
+  </body>
 </html>
