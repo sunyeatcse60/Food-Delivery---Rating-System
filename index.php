@@ -249,6 +249,64 @@
     </section>
 
     <!-- About Us Section -->
+        <section
+        class="w-10/12 mx-auto bg-white mt-10 py-16 px-4 md:px-10 lg:px-24">
+      <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+            <p class="text-lg text-gray-600">
+              Bringing flavor to your doorstep.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                Who We Are
+              </h3>
+              <p class="text-gray-600 mb-6">
+                QuickDish is a fast, reliable, and user-friendly food delivery
+                platform designed to bring delicious meals from your favorite
+                restaurants straight to your door.
+              </p>
+
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                Our Mission
+              </h3>
+              <p class="text-gray-600">
+                Our mission is to support local food businesses while providing
+                customers with a seamless and enjoyable food ordering
+                experience.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                Why Choose Us
+              </h3>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                  <h4 class="text-2xl font-bold text-green-600">10,000+</h4>
+                  <p class="text-sm text-gray-600">Orders Delivered</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                  <h4 class="text-2xl font-bold text-yellow-500">4.8/5</h4>
+                  <p class="text-sm text-gray-600">Avg. Customer Rating</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                  <h4 class="text-2xl font-bold text-blue-500">200+</h4>
+                  <p class="text-sm text-gray-600">Partner Restaurants</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                  <h4 class="text-2xl font-bold text-red-500">100%</h4>
+                  <p class="text-sm text-gray-600">Customer Satisfaction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Delivery Process Section -->
   </main>
