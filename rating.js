@@ -3,7 +3,7 @@ const ratingValue = document.getElementById("rating-value");
 
 stars.forEach((star, index) => {
   star.addEventListener("click", () => {
-    // Fill stars up to selected
+    // Fill starsto selected
     ratingValue.value = index + 1;
     updateStars(index);
   });
@@ -19,6 +19,10 @@ stars.forEach((star, index) => {
 
 function updateStars(index) {
   stars.forEach((s, i) => {
-    s.innerHTML = i <= index ? "&#9733;" : "&#9734;";
+    if (i <= index) {
+      s.className = "fa-solid fa-star cursor-pointer text-yellow-400 text-3xl";
+    } else {
+      s.className = "fa-regular fa-star cursor-pointer text-yellow-400 text-3xl";
+    }
   });
 }

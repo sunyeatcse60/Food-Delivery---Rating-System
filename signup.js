@@ -40,13 +40,9 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   }
 
   if (isValid) {
-    alert("Signup successful!");
-
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
-
-    window.location.href = "index.html";
-  } else {
+    this.submit();
+  } 
+  else {
     alert(message);
   }
 });
