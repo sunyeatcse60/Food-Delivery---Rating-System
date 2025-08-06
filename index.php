@@ -312,6 +312,67 @@
       </section>
 
     <!-- Delivery Process Section -->
+      <section
+        class="w-10/12 mx-auto bg-gray-50 rounded-lg  mt-10 py-10 px-4"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-10 text-center"
+        >
+          <div class="text-sm">
+            <img
+              src="../Images/delivery_process.png"
+              alt="bike"
+              class="w-30 h-20 rounded-lg mx-auto mb-1"
+            />
+            <h4 class="text-lg font-semibold">Delivery Process</h4>
+          </div>
+
+          <div class="text-sm">
+            <img
+              src="../Images/right-arrow.png"
+              alt="arrow"
+              class="w-10 mx-auto mb-1 rotate-90 md:rotate-0"
+            />
+          </div>
+
+          <div class="text-sm">
+            <img
+              src="../Images/booking.png"
+              alt="booking"
+              class="w-12 mx-auto mb-1"
+            />
+            <p class="font-medium">Booking</p>
+          </div>
+
+          <div class="text-sm">
+            <img
+              src="../Images/packing.png"
+              alt="packing"
+              class="w-12 mx-auto mb-1"
+            />
+            <p class="font-medium">Packing</p>
+          </div>
+
+          <div class="text-sm">
+            <img
+              src="../Images/transport.png"
+              alt="transport"
+              class="w-12 mx-auto mb-1"
+            />
+            <p class="font-medium">Transportation</p>
+          </div>
+
+          <div class="text-sm">
+            <img
+              src="../Images/delivery.png"
+              alt="delivery"
+              class="w-12 mx-auto mb-1"
+            />
+            <p class="font-medium">Delivery</p>
+          </div>
+        </div>
+      </section>
+      
   </main>
 
   <!-- Footer -->
