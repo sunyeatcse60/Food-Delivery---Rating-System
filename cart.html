@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - QuickDish</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+  <!-- Tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow-md w-full">
+    <nav class="max-w-screen-xl mx-auto px-6 lg:px-16 flex justify-between items-center py-4">
+      <div class="flex items-center gap-2">
+        <img src="./Images/logo.png" alt="logo" class="w-10 h-10 rounded-lg" />
+        <h1 class="text-2xl font-bold text-gray-800">QuickDish</h1>
+      </div>
+      <div class="flex gap-6 text-gray-700 font-medium">
+        <a href="index.php#home" class="hover:text-yellow-500">Home</a>
+        <a href="index.php#menu" class="hover:text-yellow-500">Menu</a>
+        <a href="index.php#service" class="hover:text-yellow-500">Service</a>
+        <a href="index.php#reviews" class="hover:text-yellow-500">Reviews</a>
+        <a href="index.php#about" class="hover:text-yellow-500">About Us</a>
+        <a href="feedback.html" class="hover:text-yellow-500">Feedback</a>
+      </div>
+      <a href="index.php" class="bg-yellow-400 px-4 py-1 rounded text-white font-semibold">Back to Home</a>
+    </nav>
+  </header>
+  <main class="max-w-2xl mx-auto mt-10 bg-white rounded-xl shadow p-6">
+    <div id="cart-items"></div>
+    <div class="flex justify-between items-center mt-6">
+      <span id="cart-total" class="text-xl font-bold text-green-600"></span>
+      <form action="checkout.php" method="POST">
+        <input type="hidden" name="cartData" id="cartDataInput">
+        <button type="submit" class="bg-yellow-400 text-white px-6 py-2 rounded font-semibold">Checkout</button>
+      </form>
+    </div>
+  </main>
+  <script src="cart.js"></script>
+</body>
+</html>
