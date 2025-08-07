@@ -278,6 +278,9 @@
                 customers with a seamless and enjoyable food ordering
                 experience.
               </p>
+              <p class="text-gray-600 mt-4">
+                We believe in quality, speed, and customer satisfaction above all.</p>
+                <br>
             </div>
 
             <div>
