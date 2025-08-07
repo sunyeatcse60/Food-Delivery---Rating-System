@@ -1,3 +1,17 @@
+// Modal show/hide functions moved from index.php
+function showModal() {
+  const overlay = document.getElementById('modal-overlay');
+  overlay.classList.remove('hidden');
+  overlay.classList.add('flex');
+}
+
+function hideModal() {
+  const overlay = document.getElementById('modal-overlay');
+  overlay.classList.remove('flex');
+  overlay.classList.add('hidden');
+}
+
+
 function loadModal(page) {
   fetch(page)
     .then(res => res.text())

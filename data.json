@@ -1,0 +1,708 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Paratha",
+      "category": "Breakfast",
+      "short_description": "Layered paratha with fried egg",
+      "description": "Traditional Bangladeshi breakfast combo of soft paratha and sunny-side-up egg.",
+      "price": 10,
+      "discount": 0,
+      "image": "https://img.freepik.com/premium-photo/kerala-paratha-hd-8k-wallpaper-stock-photographic-image_853645-68332.jpg",
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Egg Fry",
+      "category": "Breakfast",
+      "short_description": "Fluffy pancakes topped with honey",
+      "description": "Soft American-style pancakes drizzled with organic honey and butter.",
+      "price": 20,
+      "discount": 0,
+      "image": "https://media.istockphoto.com/id/618520484/photo/fried-eggs-on-white-plate.jpg?s=612x612&w=0&k=20&c=F1W_X67aylmnKhH2rjV_h7K0NPw6FTUO6bogvzWmV1E=",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Khichuri",
+      "category": "Breakfast",
+      "short_description": "Hot moong dal khichuri",
+      "description": "Warm moong dal khichuri served with fried eggplant and green chili.",
+      "price": 50,
+      "discount": 5,
+      "image": "https://media.istockphoto.com/id/1202743802/photo/famous-indian-food-khichdi-is-ready-to-serve.jpg?s=612x612&w=0&k=20&c=ysvin6jJMbFZF1q02tryZ0IloO2q81bAaTiHCKTF9Wk=",
+      "stock": 80
+    },
+    {
+      "id": 4,
+      "name": "Oats Porridge",
+      "category": "Breakfast",
+      "short_description": "Healthy oats with milk",
+      "description": "Steamed oats cooked in milk with fruits and honey for a nutritious start.",
+      "price": 90,
+      "discount": 0,
+      "image": "https://example.com/breakfast/oats.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Toast & Butter",
+      "category": "Breakfast",
+      "short_description": "White toast with butter",
+      "description": "Crispy toasted bread slices served with butter and jam.",
+      "price": 60,
+      "discount": 0,
+      "image": "https://example.com/breakfast/toast.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 6,
+      "name": "Boiled Egg & Banana",
+      "category": "Breakfast",
+      "short_description": "Simple and healthy start",
+      "description": "Boiled egg served with a fresh banana \u2014 perfect for energy.",
+      "price": 50,
+      "discount": 0,
+      "image": "https://example.com/breakfast/egg-banana.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 7,
+      "name": "Upma",
+      "category": "Breakfast",
+      "short_description": "South Indian upma",
+      "description": "Healthy semolina upma cooked with veggies and curry leaves.",
+      "price": 90,
+      "discount": 5,
+      "image": "https://example.com/breakfast/upma.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 8,
+      "name": "Idli & Sambar",
+      "category": "Breakfast",
+      "short_description": "Soft idlis with spicy sambar",
+      "description": "South Indian steamed rice cakes served with lentil curry and chutney.",
+      "price": 110,
+      "discount": 10,
+      "image": "https://example.com/breakfast/idli.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 9,
+      "name": "Chicken Biryani",
+      "category": "Lunch",
+      "short_description": "Flavorful chicken biryani",
+      "description": "Long grain rice with marinated chicken, saffron and special spices.",
+      "price": 250,
+      "discount": 15,
+      "image": "https://example.com/lunch/chicken-biryani.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 10,
+      "name": "Plain Rice & Lentil",
+      "category": "Lunch",
+      "short_description": "Simple Bangladeshi lunch",
+      "description": "Steamed rice served with red lentil dal and mashed potato.",
+      "price": 100,
+      "discount": 5,
+      "image": "https://example.com/lunch/rice-dal.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 11,
+      "name": "Beef Curry & Rice",
+      "category": "Lunch",
+      "short_description": "Beef curry with plain rice",
+      "description": "Tender beef cooked in spicy gravy served with steamed rice.",
+      "price": 280,
+      "discount": 10,
+      "image": "https://example.com/lunch/beef-curry.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 12,
+      "name": "Fish Curry & Rice",
+      "category": "Lunch",
+      "short_description": "Rui mach with rice",
+      "description": "Rohu fish cooked in mustard gravy served with white rice.",
+      "price": 230,
+      "discount": 5,
+      "image": "https://example.com/lunch/fish-curry.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 13,
+      "name": "Mixed Vegetable",
+      "category": "Lunch",
+      "short_description": "Seasonal veggies with rice",
+      "description": "Boiled or stir-fried vegetables served with steamed rice.",
+      "price": 150,
+      "discount": 0,
+      "image": "https://example.com/lunch/mixed-veg.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 14,
+      "name": "Chicken Curry & Polao",
+      "category": "Lunch",
+      "short_description": "Deshi polao with chicken",
+      "description": "Aromatic polao rice served with chicken curry and salad.",
+      "price": 260,
+      "discount": 10,
+      "image": "https://example.com/lunch/chicken-polao.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 15,
+      "name": "Egg Curry",
+      "category": "Lunch",
+      "short_description": "Boiled eggs in curry",
+      "description": "Eggs cooked in spiced tomato gravy served with rice.",
+      "price": 170,
+      "discount": 5,
+      "image": "https://example.com/lunch/egg-curry.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 16,
+      "name": "Chingri Malai Curry",
+      "category": "Lunch",
+      "short_description": "Prawns in coconut gravy",
+      "description": "Luxury Bengali lunch with coconut prawn curry and rice.",
+      "price": 350,
+      "discount": 15,
+      "image": "https://example.com/lunch/chingri.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 17,
+      "name": "Beef Rezala",
+      "category": "Dinner",
+      "short_description": "Mughlai beef dish",
+      "description": "Tender beef cooked in creamy white gravy with ghee and cardamom.",
+      "price": 320,
+      "discount": 10,
+      "image": "https://example.com/dinner/beef-rezala.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 18,
+      "name": "Plain Rice & Chicken Curry",
+      "category": "Dinner",
+      "short_description": "Classic dinner",
+      "description": "Rice with traditional chicken curry and salad.",
+      "price": 200,
+      "discount": 5,
+      "image": "https://example.com/dinner/chicken-curry.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 19,
+      "name": "Mutton Korma",
+      "category": "Dinner",
+      "short_description": "Rich mutton curry",
+      "description": "Slow-cooked mutton in thick gravy with aromatic spices.",
+      "price": 350,
+      "discount": 15,
+      "image": "https://example.com/dinner/mutton-korma.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 20,
+      "name": "Mixed Vegetable Curry",
+      "category": "Dinner",
+      "short_description": "Veg dinner",
+      "description": "Seasonal vegetables cooked in spicy curry sauce.",
+      "price": 150,
+      "discount": 0,
+      "image": "https://example.com/dinner/mixed-veg.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 21,
+      "name": "Polao with Egg Curry",
+      "category": "Dinner",
+      "short_description": "Light dinner combo",
+      "description": "Polao rice served with spicy boiled egg curry.",
+      "price": 190,
+      "discount": 10,
+      "image": "https://example.com/dinner/egg-polao.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 22,
+      "name": "Fried Rice & Chicken",
+      "category": "Dinner",
+      "short_description": "Chinese style dinner",
+      "description": "Egg fried rice served with chilli chicken.",
+      "price": 270,
+      "discount": 10,
+      "image": "https://example.com/dinner/fried-rice.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 23,
+      "name": "Khichuri & Chicken",
+      "category": "Dinner",
+      "short_description": "Comfort food combo",
+      "description": "Hot khichuri served with chicken rezala and eggplant fry.",
+      "price": 240,
+      "discount": 10,
+      "image": "https://example.com/dinner/khichuri-combo.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 24,
+      "name": "Shrimp Curry",
+      "category": "Dinner",
+      "short_description": "Dinner with seafood",
+      "description": "Spicy shrimp curry served with steamed rice.",
+      "price": 310,
+      "discount": 5,
+      "image": "https://example.com/dinner/shrimp.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 25,
+      "name": "Cheese Pizza",
+      "category": "Fast Food",
+      "short_description": "Classic cheese pizza",
+      "description": "Hot cheese pizza with soft crust and tomato sauce.",
+      "price": 250,
+      "discount": 10,
+      "image": "https://example.com/fastfood/pizza.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 26,
+      "name": "Veg Burger",
+      "category": "Fast Food",
+      "short_description": "Burger with fresh veggies",
+      "description": "Grilled patty burger with lettuce, tomato, and cheese.",
+      "price": 180,
+      "discount": 5,
+      "image": "https://example.com/fastfood/veg-burger.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 27,
+      "name": "Chicken Burger",
+      "category": "Fast Food",
+      "short_description": "Spicy chicken burger",
+      "description": "Crispy chicken fillet in burger bun with mayo.",
+      "price": 200,
+      "discount": 10,
+      "image": "https://example.com/fastfood/chicken-burger.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 28,
+      "name": "French Fries",
+      "category": "Fast Food",
+      "short_description": "Crispy fries",
+      "description": "Golden fried potato strips served with ketchup.",
+      "price": 100,
+      "discount": 0,
+      "image": "https://example.com/fastfood/fries.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 29,
+      "name": "Chicken Nuggets",
+      "category": "Fast Food",
+      "short_description": "Crispy nuggets",
+      "description": "Deep fried chicken nuggets served with sauces.",
+      "price": 150,
+      "discount": 5,
+      "image": "https://example.com/fastfood/nuggets.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 30,
+      "name": "Hot Dog",
+      "category": "Fast Food",
+      "short_description": "Sausage roll",
+      "description": "Grilled sausage in a bun with mustard and ketchup.",
+      "price": 160,
+      "discount": 10,
+      "image": "https://example.com/fastfood/hotdog.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 31,
+      "name": "Shawarma Roll",
+      "category": "Fast Food",
+      "short_description": "Middle Eastern wrap",
+      "description": "Grilled chicken shawarma wrap with garlic sauce.",
+      "price": 180,
+      "discount": 10,
+      "image": "https://example.com/fastfood/shawarma.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 32,
+      "name": "Beef Wrap",
+      "category": "Fast Food",
+      "short_description": "Beef filled wrap",
+      "description": "Spiced beef strips wrapped in flatbread.",
+      "price": 220,
+      "discount": 5,
+      "image": "https://example.com/fastfood/beef-wrap.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 33,
+      "name": "Samosa",
+      "category": "Snacks",
+      "short_description": "Triangular snack",
+      "description": "Crispy fried shell filled with spiced potatoes.",
+      "price": 20,
+      "discount": 0,
+      "image": "https://example.com/snacks/samosa.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 34,
+      "name": "Singara",
+      "category": "Snacks",
+      "short_description": "Deep fried snack",
+      "description": "Stuffed with veggies and fried till golden brown.",
+      "price": 15,
+      "discount": 0,
+      "image": "https://example.com/snacks/singara.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 35,
+      "name": "Chicken Roll",
+      "category": "Snacks",
+      "short_description": "Crispy chicken roll",
+      "description": "Fried chicken wrapped in paratha with onions.",
+      "price": 120,
+      "discount": 5,
+      "image": "https://example.com/snacks/chicken-roll.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 36,
+      "name": "Egg Chop",
+      "category": "Snacks",
+      "short_description": "Boiled egg fritter",
+      "description": "Boiled egg covered with mashed potato and fried.",
+      "price": 30,
+      "discount": 0,
+      "image": "https://example.com/snacks/egg-chop.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 37,
+      "name": "Mini Pizza",
+      "category": "Snacks",
+      "short_description": "Snack size pizza",
+      "description": "Small cheesy pizza loaded with toppings.",
+      "price": 80,
+      "discount": 0,
+      "image": "https://example.com/snacks/mini-pizza.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 38,
+      "name": "Bread Pakora",
+      "category": "Snacks",
+      "short_description": "Fried bread snack",
+      "description": "Bread slices dipped in batter and fried.",
+      "price": 25,
+      "discount": 0,
+      "image": "https://example.com/snacks/bread-pakora.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 39,
+      "name": "Fuchka",
+      "category": "Snacks",
+      "short_description": "Crispy stuffed shells",
+      "description": "Popular street snack filled with tamarind and spices.",
+      "price": 50,
+      "discount": 0,
+      "image": "https://example.com/snacks/fuchka.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 40,
+      "name": "Spring Roll",
+      "category": "Snacks",
+      "short_description": "Vegetable roll",
+      "description": "Crispy outer shell with mixed veggie stuffing.",
+      "price": 70,
+      "discount": 5,
+      "image": "https://example.com/snacks/spring-roll.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 41,
+      "name": "Banana",
+      "category": "Fruits",
+      "short_description": "Ripe banana",
+      "description": "Fresh ripe bananas full of potassium.",
+      "price": 30,
+      "discount": 0,
+      "image": "https://example.com/fruits/banana.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 42,
+      "name": "Apple",
+      "category": "Fruits",
+      "short_description": "Juicy apple",
+      "description": "Red delicious apples perfect for snacks.",
+      "price": 50,
+      "discount": 0,
+      "image": "https://example.com/fruits/apple.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 43,
+      "name": "Mango",
+      "category": "Fruits",
+      "short_description": "Sweet mango",
+      "description": "Seasonal ripe mangoes from Rajshahi.",
+      "price": 80,
+      "discount": 0,
+      "image": "https://example.com/fruits/mango.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 44,
+      "name": "Pineapple",
+      "category": "Fruits",
+      "short_description": "Tart pineapple",
+      "description": "Fresh sliced pineapple with tangy taste.",
+      "price": 60,
+      "discount": 0,
+      "image": "https://example.com/fruits/pineapple.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 45,
+      "name": "Papaya",
+      "category": "Fruits",
+      "short_description": "Fresh papaya",
+      "description": "Ripe papaya pieces rich in fiber.",
+      "price": 40,
+      "discount": 0,
+      "image": "https://example.com/fruits/papaya.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 46,
+      "name": "Grapes",
+      "category": "Fruits",
+      "short_description": "Seedless grapes",
+      "description": "Green grapes packed with nutrients.",
+      "price": 90,
+      "discount": 0,
+      "image": "https://example.com/fruits/grapes.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 47,
+      "name": "Watermelon",
+      "category": "Fruits",
+      "short_description": "Chilled watermelon",
+      "description": "Cool and juicy watermelon slices.",
+      "price": 70,
+      "discount": 0,
+      "image": "https://example.com/fruits/watermelon.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 48,
+      "name": "Orange",
+      "category": "Fruits",
+      "short_description": "Citrus orange",
+      "description": "Vitamin-C rich sweet oranges.",
+      "price": 60,
+      "discount": 0,
+      "image": "https://example.com/fruits/orange.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 49,
+      "name": "Orange Juice",
+      "category": "Drinks",
+      "short_description": "Fresh juice",
+      "description": "Chilled orange juice, no added sugar.",
+      "price": 90,
+      "discount": 5,
+      "image": "https://example.com/drinks/orange-juice.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 50,
+      "name": "Lassi",
+      "category": "Drinks",
+      "short_description": "Sweet yogurt drink",
+      "description": "Cold yogurt blended with sugar.",
+      "price": 60,
+      "discount": 0,
+      "image": "https://example.com/drinks/lassi.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 51,
+      "name": "Coca Cola",
+      "category": "Drinks",
+      "short_description": "Chilled cola",
+      "description": "500ml soft drink bottle.",
+      "price": 30,
+      "discount": 0,
+      "image": "https://example.com/drinks/coke.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 52,
+      "name": "Pepsi",
+      "category": "Drinks",
+      "short_description": "Carbonated drink",
+      "description": "Popular fizzy drink.",
+      "price": 30,
+      "discount": 0,
+      "image": "https://example.com/drinks/pepsi.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 53,
+      "name": "Mango Juice",
+      "category": "Drinks",
+      "short_description": "Juicy delight",
+      "description": "Thick mango drink served cold.",
+      "price": 80,
+      "discount": 0,
+      "image": "https://example.com/drinks/mango.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 54,
+      "name": "Cold Coffee",
+      "category": "Drinks",
+      "short_description": "Iced coffee",
+      "description": "Coffee served with milk and ice cubes.",
+      "price": 100,
+      "discount": 5,
+      "image": "https://example.com/drinks/cold-coffee.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 55,
+      "name": "Green Tea",
+      "category": "Drinks",
+      "short_description": "Healthy tea",
+      "description": "Low calorie herbal tea.",
+      "price": 50,
+      "discount": 0,
+      "image": "https://example.com/drinks/green-tea.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 56,
+      "name": "Milkshake",
+      "category": "Drinks",
+      "short_description": "Fruit milkshake",
+      "description": "Blended milk with banana/strawberry.",
+      "price": 110,
+      "discount": 10,
+      "image": "https://example.com/drinks/milkshake.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 57,
+      "name": "Mutton Tehari",
+      "category": "Special Food",
+      "short_description": "Dhaka style tehari",
+      "description": "Spicy rice cooked with mutton and mustard oil.",
+      "price": 400,
+      "discount": 10,
+      "image": "https://example.com/special/tehari.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 58,
+      "name": "Kacchi Biryani",
+      "category": "Special Food",
+      "short_description": "Wedding special",
+      "description": "Mutton kacchi with fragrant rice and aloo.",
+      "price": 450,
+      "discount": 10,
+      "image": "https://example.com/special/kacchi.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 59,
+      "name": "Beef Kala Bhuna",
+      "category": "Special Food",
+      "short_description": "Chattogram special",
+      "description": "Slow cooked black beef curry.",
+      "price": 390,
+      "discount": 10,
+      "image": "https://example.com/special/kala-bhuna.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 60,
+      "name": "Chicken Roast",
+      "category": "Special Food",
+      "short_description": "Red chicken roast",
+      "description": "Fried chicken leg in spicy red gravy.",
+      "price": 220,
+      "discount": 5,
+      "image": "https://example.com/special/roast.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 61,
+      "name": "Jali Kabab",
+      "category": "Special Food",
+      "short_description": "Minced meat kabab",
+      "description": "Egg-wrapped spicy kabab.",
+      "price": 180,
+      "discount": 5,
+      "image": "https://example.com/special/jali-kabab.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 62,
+      "name": "Fish Korma",
+      "category": "Special Food",
+      "short_description": "White fish curry",
+      "description": "Delicate fish pieces in white gravy.",
+      "price": 270,
+      "discount": 10,
+      "image": "https://example.com/special/fish-korma.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 63,
+      "name": "Naan & Butter Chicken",
+      "category": "Special Food",
+      "short_description": "Indian style",
+      "description": "Butter chicken served with naan bread.",
+      "price": 300,
+      "discount": 10,
+      "image": "https://example.com/special/naan.jpg"
+    ,"stock": 10
+    },
+    {
+      "id": 64,
+      "name": "Morog Polao",
+      "category": "Special Food",
+      "short_description": "Traditional dish",
+      "description": "Polao with fried chicken leg and salad.",
+      "price": 320,
+      "discount": 10,
+      "image": "https://example.com/special/morog-polao.jpg"
+    ,"stock": 10
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+*.php linguist-language=PHP
+*.html linguist-language=HTML
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.json linguist-language=JSON
+
+# If you want to ignore vendor or external files:
+vendor/** linguist-vendored
+node_modules/** linguist-vendored

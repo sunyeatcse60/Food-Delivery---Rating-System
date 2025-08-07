@@ -27,7 +27,7 @@
 </head>
 
 <body class="font-sans">
-  <!-- Navbar -->
+
   <header class="fixed top-0 w-full z-50 bg-white shadow-md">
     <nav class="max-w-screen-xl mx-auto px-6 lg:px-16">
       <div class="flex justify-between items-center py-4">
@@ -50,23 +50,23 @@
         <!-- Cart + Login -->
         <div class="flex items-center gap-4">
           <div class="relative hidden sm:block">
-            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 6h15l-1.5 9h-13z"></path>
-              <path d="M6 6L4 2H2"></path>
-              <circle cx="9" cy="20" r="1"></circle>
-              <circle cx="18" cy="20" r="1"></circle>
-            </svg>
-            <span class="absolute -top-2 -right-2 bg-yellow-400 text-xs px-1 rounded-full text-white">0</span>
+            <a href="cart.html" class="relative block">
+              <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 6h15l-1.5 9h-13z"></path>
+                <path d="M6 6L4 2H2"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="18" cy="20" r="1"></circle>
+              </svg>
+              <span id="cart-count" class="absolute -top-2 -right-2 bg-yellow-400 text-xs px-1 rounded-full text-white">0</span>
+            </a>
           </div>
 
-         
+
           <button onclick="loadModal('signup.html')"
             class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white px-4 py-1 rounded font-semibold">
             Signup
           </button>
-
-
 
 
           <!-- Mobile Dropdown -->
@@ -103,13 +103,15 @@
   </header>
 
   <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-    <div id="modal-content" class="bg-white p-6 rounded-md shadow-md max-w-md w-full relative flex flex-col items-center justify-center">
-      <!-- Dynamic content will be inserted here -->
+    <div id="modal-content"
+      class="bg-white p-6 rounded-md shadow-md max-w-md w-full relative flex flex-col items-center justify-center">
+      <!-- Dynamic content -->
     </div>
   </div>
+  
 
 
- 
+
   <main class="pt-24">
     <!-- Hero Section -->
     <section id="home"
@@ -133,7 +135,8 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="w-10/12 mx-auto mt-20 py-20 text-center bg-gray-100 rounded-lg">
+    <section id="menu" class="w-10/12 mx-auto mt-20 py-20 px-6 text-center bg-gray-100 rounded-lg">
+
       <h2 class="text-3xl font-bold mb-6">Our Menu</h2>
       <p class="text-gray-600 max-w-2xl mx-auto">
         Delicious meals curated just for you. Explore our selection of freshly
@@ -142,9 +145,19 @@
 
       <!-- API food section -->
 
+      <div id="category-buttons" class="flex flex-wrap gap-2 mt-10 mb-6 justify-center">
+
+      </div>
+
+      <!-- Food Card Grid -->
+      <div id="food-grid" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 px-4">
+
+      </div>
 
 
     </section>
+
+
 
     <!-- Service Section -->
 

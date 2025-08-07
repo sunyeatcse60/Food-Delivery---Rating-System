@@ -26,3 +26,13 @@ function updateStars(index) {
     }
   });
 }
+
+// Show alert on feedback form submit
+document.addEventListener('DOMContentLoaded', function() {
+  var feedbackForm = document.getElementById('feedbackForm');
+  if (feedbackForm) {
+    feedbackForm.addEventListener('submit', function() {
+      alert('Feedback submitted!');
+    });
+  }
+});
