@@ -4,6 +4,6 @@
 *.css linguist-language=CSS
 *.json linguist-language=JSON
 
-# If you want to ignore vendor or external files:
+# Ignore vendor and node_modules from language stats
 vendor/** linguist-vendored
 node_modules/** linguist-vendored
