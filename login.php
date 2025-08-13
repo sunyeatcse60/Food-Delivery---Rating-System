@@ -22,7 +22,7 @@ if (mysqli_num_rows($run) == 1) {
         $_SESSION['user_id'] = $row['id'];
         $_SESSION['username'] = $row['username'];
 
-    header("Location: index.html");
+    header("Location: index.php");
         exit();
     } else {
         echo "<script>alert('Invalid password.'); window.history.back();</script>";
