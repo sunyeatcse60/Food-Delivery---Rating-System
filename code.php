@@ -15,7 +15,7 @@ $run = mysqli_query($con, $query);
 
 if ($run) {
   echo "<script> alert('Feedback submitted successfully.');
-        window.location.href = 'index.php';
+  window.location.href = 'index.html';
     </script>";
 } else {
   echo "<script> alert('Failed to submit feedback.');
