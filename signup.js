@@ -9,6 +9,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   let isValid = true;
   let message = "";
+  
 
   if (username === "") {
     isValid = false;

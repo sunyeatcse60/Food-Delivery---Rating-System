@@ -9,16 +9,17 @@ $confirmPassword = $_POST['confirmPassword'];
 
 
 if ($password !== $confirmPassword) {
-    echo "Passwords do not match.";
+    echo "<script>alert('Passwords do not match.'); window.history.back();</script>";
     exit();
 }
 
-// email or username already exists
+
 $checkUser = "SELECT * FROM signuptable WHERE email = '$email' OR username = '$username'";
 $result = mysqli_query($con, $checkUser);
 
+
 if (mysqli_num_rows($result) > 0) {
-    echo "Email or Username already registered. Please login.";
+    echo "<script>alert('Email or Username already registered. Please login.'); window.history.back();</script>";
     exit();
 }
 
@@ -34,6 +35,6 @@ $run = mysqli_query($con, $query);
 if ($run) {
     header("Location: login.html");
 } else {
-    echo "Signup failed. Try again.";
+    echo "<script>alert('Signup failed. Try again.'); window.history.back();</script>";
 }
 ?>

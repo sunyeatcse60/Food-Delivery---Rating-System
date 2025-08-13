@@ -4,22 +4,31 @@
     <meta charset="UTF-8"><title>Signup</title>
     <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-50">
+
   <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mx-auto">
-    <h4 class="font-bold text-2xl mb-4 text-center">Create an Account !!</h4>
+
+    <h4 class="font-bold text-2xl mb-4 text-center">Create an Account</h4>
+
     <form class="space-y-4" action="signup.php" method="POST">
-      <div><label class="text-sm font-semibold">Username</label><input type="text" name="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
-      <div><label class="text-sm font-semibold">Email</label><input type="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
-      <div><label class="text-sm font-semibold">Phone</label><input type="tel" name="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
-      <div><label class="text-sm font-semibold">Password</label><input type="password" name="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
-      <div><label class="text-sm font-semibold">Confirm Password</label><input type="password" name="confirmPassword" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
-      <button type="submit" class="btn w-full bg-yellow-400 hover:bg-[#471396] text-white">Sign Up</button>
+      
+      <div><label class="text-sm font-semibold text-gray-700">Username</label><input type="text" name="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
+      <div><label class="text-sm font-semibold text-gray-700">Email</label><input type="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
+      <div><label class="text-sm font-semibold text-gray-700">Phone</label><input type="tel" name="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
+      <div><label class="text-sm font-semibold text-gray-700">Password</label><input type="password" name="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
+      <div><label class="text-sm font-semibold text-gray-700">Confirm Password</label><input type="password" name="confirmPassword" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required /></div>
+      <button type="submit" class="btn w-full bg-yellow-400 hover:bg-[#471396] text-white font-semibold py-2 rounded-md transition-colors">Sign Up</button>
+      
     </form>
+
     <p class="text-sm mt-4 text-center">
       Already have an account?
-      <a href="#" onclick="switchToLogin()" class="text-yellow-500 hover:underline">Login</a>
+      <a href="login.html" class="text-yellow-500 hover:underline">Login</a>
     </p>
+
   </div>
+
 </body>
 </html>

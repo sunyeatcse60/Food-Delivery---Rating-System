@@ -1,5 +1,6 @@
-<?php 
+<?php
 
-$con = mysqli_connect("localhost","root","","fooddb");
+$con = mysqli_connect("localhost", "root", "", "fooddb");
+
 
 ?>

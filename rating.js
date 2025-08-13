@@ -1,38 +1,28 @@
-const stars = document.querySelectorAll("#stars span");
-const ratingValue = document.getElementById("rating-value");
-
-stars.forEach((star, index) => {
-  star.addEventListener("click", () => {
-    // Fill starsto selected
-    ratingValue.value = index + 1;
-    updateStars(index);
+const stars = document.querySelectorAll('#stars span');
+const ratingValue = document.getElementById('rating-value');
+stars.forEach((star, idx) => {
+  star.addEventListener('click', () => {
+    ratingValue.value = idx + 1;
+    updateStars(idx);
   });
-
-  star.addEventListener("mouseover", () => {
-    updateStars(index);
+  star.addEventListener('mouseover', () => {
+    updateStars(idx);
   });
-
-  star.addEventListener("mouseout", () => {
+  star.addEventListener('mouseout', () => {
     updateStars(ratingValue.value - 1);
   });
 });
-
-function updateStars(index) {
-  stars.forEach((s, i) => {
-    if (i <= index) {
-      s.className = "fa-solid fa-star cursor-pointer text-yellow-400 text-3xl";
-    } else {
-      s.className = "fa-regular fa-star cursor-pointer text-yellow-400 text-3xl";
-    }
+function updateStars(idx) {
+  stars.forEach((star, i) => {
+    star.innerHTML = i <= idx ? '&#9733;' : '&#9734;';
   });
 }
-
-// Show alert on feedback form submit
-document.addEventListener('DOMContentLoaded', function() {
-  var feedbackForm = document.getElementById('feedbackForm');
-  if (feedbackForm) {
-    feedbackForm.addEventListener('submit', function() {
-      alert('Feedback submitted!');
-    });
-  }
-});
+// // Simple alert on submit
+// document.addEventListener('DOMContentLoaded', function() {
+//   const form = document.querySelector('form[action="code.php"]');
+//   if (form) {
+//     form.addEventListener('submit', function() {
+//       alert('Feedback submitted!');
+//     });
+//   }
+// });

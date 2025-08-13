@@ -58,15 +58,17 @@
                 <circle cx="9" cy="20" r="1"></circle>
                 <circle cx="18" cy="20" r="1"></circle>
               </svg>
-              <span id="cart-count" class="absolute -top-2 -right-2 bg-yellow-400 text-xs px-1 rounded-full text-white">0</span>
+              <span id="cart-count"
+                class="absolute -top-2 -right-2 bg-yellow-400 text-xs px-1 rounded-full text-white">0</span>
             </a>
           </div>
 
 
-          <button onclick="loadModal('signup.html')"
+          <a href="signup.html"
             class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white px-4 py-1 rounded font-semibold">
-            Signup
-          </button>
+            Sign Up
+          </a>
+
 
 
           <!-- Mobile Dropdown -->
@@ -102,13 +104,13 @@
     </nav>
   </header>
 
-  <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+  <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50  justify-center items-center hidden z-50">
     <div id="modal-content"
       class="bg-white p-6 rounded-md shadow-md max-w-md w-full relative flex flex-col items-center justify-center">
       <!-- Dynamic content -->
     </div>
   </div>
-  
+
 
 
 
@@ -123,8 +125,8 @@
           Food
         </h2>
         <div class="flex shadow-md rounded overflow-hidden w-full max-w-md mb-10">
-          <input type="text" placeholder="Enter your meal" class="flex-grow px-4 py-3 text-gray-700 outline-none" />
-          <button class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white px-6 font-semibold">
+          <input type="text" placeholder="Enter your meal.." class="flex-grow px-4 py-3 text-gray-700 outline-none" />
+          <button  class="bg-yellow-400 hover:bg-[#471396] text-black hover:text-white px-6 font-semibold">
             Search
           </button>
         </div>
@@ -146,12 +148,11 @@
       <!-- API food section -->
 
       <div id="category-buttons" class="flex flex-wrap gap-2 mt-10 mb-6 justify-center">
-
+        <!-- Button append here -->
       </div>
 
-      <!-- Food Card Grid -->
       <div id="food-grid" class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 px-4">
-
+        <!-- Food Card append here -->
       </div>
 
 
@@ -229,7 +230,7 @@
           </button>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <img src="https://i.pravatar.cc/100?img=2" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Customer 2" />
+          <img src="https://media.istockphoto.com/id/1416037924/photo/bearded-man-standing-showing-his-smart-watch-and-looking-at-camera-with-toothy-smile.jpg?s=612x612&w=0&k=20&c=IOiqa1N8UR4CMIdfYJJ76qBoH5DyjGxudI9Beegiw5w=" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Customer 2" />
           <h3 class="text-lg font-semibold mb-2">Rafiul Islam</h3>
           <p class="text-sm text-gray-600 mb-4">
             QuickDish never disappoints. Tasty food and always fresh.
@@ -249,7 +250,7 @@
           </button>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <img src="https://i.pravatar.cc/100?img=4" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Customer 4" />
+          <img src="https://www.shutterstock.com/image-photo/stylish-man-wearing-formal-suit-260nw-2564464485.jpg" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Customer 4" />
           <h3 class="text-lg font-semibold mb-2">Tareq Hossain</h3>
           <p class="text-sm text-gray-600 mb-4">
             The packaging was neat and the food was still hot. Loved it!
@@ -262,130 +263,101 @@
     </section>
 
     <!-- About Us Section -->
-        <section
-        class="w-10/12 mx-auto bg-white mt-10 py-16 px-4 md:px-10 lg:px-24">
+    <section id="about" class="w-10/12 mx-auto bg-white mt-10 py-16 px-4 md:px-10 lg:px-24">
       <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
-            <p class="text-lg text-gray-600">
-              Bringing flavor to your doorstep.
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+          <p class="text-lg text-gray-600">
+            Bringing flavor to your doorstep.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Who We Are
+            </h3>
+            <p class="text-gray-600 mb-6">
+              QuickDish is a fast, reliable, and user-friendly food delivery
+              platform designed to bring delicious meals from your favorite
+              restaurants straight to your door.
             </p>
+
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Our Mission
+            </h3>
+            <p class="text-gray-600">
+              Our mission is to support local food businesses while providing
+              customers with a seamless and enjoyable food ordering
+              experience.
+            </p>
+            <p class="text-gray-600 mt-4">
+              We believe in quality, speed, and customer satisfaction above all.</p>
+            <br>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div>
-              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-                Who We Are
-              </h3>
-              <p class="text-gray-600 mb-6">
-                QuickDish is a fast, reliable, and user-friendly food delivery
-                platform designed to bring delicious meals from your favorite
-                restaurants straight to your door.
-              </p>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Why Choose Us
+            </h3>
 
-              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-                Our Mission
-              </h3>
-              <p class="text-gray-600">
-                Our mission is to support local food businesses while providing
-                customers with a seamless and enjoyable food ordering
-                experience.
-              </p>
-              <p class="text-gray-600 mt-4">
-                We believe in quality, speed, and customer satisfaction above all.</p>
-                <br>
-            </div>
-
-            <div>
-              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-                Why Choose Us
-              </h3>
-
-              <div class="grid grid-cols-2 gap-4">
-                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
-                  <h4 class="text-2xl font-bold text-green-600">10,000+</h4>
-                  <p class="text-sm text-gray-600">Orders Delivered</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
-                  <h4 class="text-2xl font-bold text-yellow-500">4.8/5</h4>
-                  <p class="text-sm text-gray-600">Avg. Customer Rating</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
-                  <h4 class="text-2xl font-bold text-blue-500">200+</h4>
-                  <p class="text-sm text-gray-600">Partner Restaurants</p>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
-                  <h4 class="text-2xl font-bold text-red-500">100%</h4>
-                  <p class="text-sm text-gray-600">Customer Satisfaction</p>
-                </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                <h4 class="text-2xl font-bold text-green-600">10,000+</h4>
+                <p class="text-sm text-gray-600">Orders Delivered</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                <h4 class="text-2xl font-bold text-yellow-500">4.8/5</h4>
+                <p class="text-sm text-gray-600">Avg. Customer Rating</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                <h4 class="text-2xl font-bold text-blue-500">200+</h4>
+                <p class="text-sm text-gray-600">Partner Restaurants</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center shadow">
+                <h4 class="text-2xl font-bold text-red-500">100%</h4>
+                <p class="text-sm text-gray-600">Customer Satisfaction</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- Delivery Process Section -->
-      <section
-        class="w-10/12 mx-auto bg-gray-50 rounded-lg  mt-10 py-10 px-4"
-      >
-        <div
-          class="flex flex-col md:flex-row justify-center items-center gap-10 text-center"
-        >
-          <div class="text-sm">
-            <img
-              src="../Images/delivery_process.png"
-              alt="bike"
-              class="w-30 h-20 rounded-lg mx-auto mb-1"
-            />
-            <h4 class="text-lg font-semibold">Delivery Process</h4>
-          </div>
-
-          <div class="text-sm">
-            <img
-              src="../Images/right-arrow.png"
-              alt="arrow"
-              class="w-10 mx-auto mb-1 rotate-90 md:rotate-0"
-            />
-          </div>
-
-          <div class="text-sm">
-            <img
-              src="../Images/booking.png"
-              alt="booking"
-              class="w-12 mx-auto mb-1"
-            />
-            <p class="font-medium">Booking</p>
-          </div>
-
-          <div class="text-sm">
-            <img
-              src="../Images/packing.png"
-              alt="packing"
-              class="w-12 mx-auto mb-1"
-            />
-            <p class="font-medium">Packing</p>
-          </div>
-
-          <div class="text-sm">
-            <img
-              src="../Images/transport.png"
-              alt="transport"
-              class="w-12 mx-auto mb-1"
-            />
-            <p class="font-medium">Transportation</p>
-          </div>
-
-          <div class="text-sm">
-            <img
-              src="../Images/delivery.png"
-              alt="delivery"
-              class="w-12 mx-auto mb-1"
-            />
-            <p class="font-medium">Delivery</p>
-          </div>
+    <section class="w-10/12 mx-auto bg-gray-50 rounded-lg py-10 px-4">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-10 text-center">
+        <div class="text-sm">
+          <img src="./Images/delivery_process.png" alt="bike" class="w-30 h-20 rounded-lg mx-auto mb-1" />
+          <h4 class="text-lg font-semibold">Delivery Process</h4>
         </div>
-      </section>
-      
+
+        <div class="text-sm">
+          <img src="./Images/right-arrow.png" alt="arrow" class="w-10 mx-auto mb-1 rotate-90 md:rotate-0" />
+        </div>
+
+        <div class="text-sm">
+          <img src="./Images/booking.png" alt="booking" class="w-12 mx-auto mb-1" />
+          <p class="font-medium">Booking</p>
+        </div>
+
+        <div class="text-sm">
+          <img src="./Images/packing.png" alt="packing" class="w-12 mx-auto mb-1" />
+          <p class="font-medium">Packing</p>
+        </div>
+
+        <div class="text-sm">
+          <img src="./Images/transport.png" alt="transport" class="w-12 mx-auto mb-1" />
+          <p class="font-medium">Transportation</p>
+        </div>
+
+        <div class="text-sm">
+          <img src="./Images/delivery.png" alt="delivery" class="w-12 mx-auto mb-1" />
+          <p class="font-medium">Delivery</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -423,9 +395,9 @@
 
 
   <!-- js file  link -->
-  <script src="./signlog.js"></script>
   <script src="./signup.js"></script>
   <script src="./food.js"></script>
+
 </body>
 
 </html>
