@@ -1,7 +1,7 @@
 # QuickDish - Food Delivery & Rating System
 
 A modern food delivery web application with customer feedback and rating system.
-
+├── index.php           # Main landing page
 ## Features
 
 - Food menu loaded from `data.json`
